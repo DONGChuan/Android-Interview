@@ -1,14 +1,26 @@
 # 生命周期
 
+## 七个方法
+
+* onCreate 在这里创建界面, 做一些数据的初始化工作
+* onStart 可见不可交互
+* onResume 可见可交互
+* onPause: 可见但不可交互的， 系统会停止动画等消耗CPU的任务. **应该在这里保存你的一些数据,因为这个时候你的程序的优先级降低, 有可能被系统收回.**
+* onstop: 变得不可见，被下一个 activity 覆盖了
+* onRestart: 重新可见
+* onDestroy: 摧毁 activity
+
+## 生命周期图
+
+![Activity 生命周期](activity-生命周期.png)
+
 * 启动: onCreate()—>onStart()—>onResume(), Activity进入运行状态.
-* 退居后台: 当前Activity转到新的Activity界面或按Home键回到主屏: onPause()—>onStop(), 进入停滞状态.
+* 退居后台: 当前 Activity 转到新的 Activity 界面或按Home键回到主屏: onPause()—>onStop(), 进入停滞状态.
 * 返回前台: onRestart()—>onStart()—>onResume(), 再次回到运行状态.
 * Activity 退居后台, 且系统内存不足, 系统会杀死这个后台状态的 Activity (此时这个Activity引用仍然处在任务栈中，只是这个时候引用指向的对象已经为null), 若再次回到这个Activity, 则会走onCreate()–>onStart()—>onResume()(将重新走一次Activity的初始化生命周期)
 * 锁定屏与解锁屏幕, 只会调用onPause(), 而不会调用onStop()方法, 开屏后则调用onResume()
 * 当 Activity 被另一个透明或者 Dialog 样式的 Activity 覆盖时就会 onPause. 这时它仍然可见. 只是失去焦点, 不可与用户交互.
-
-![Activity 生命周期](activity-生命周期.png)
-
+* 
 ### 可能的问题
 
 * 画生命周期图
@@ -17,6 +29,16 @@
 > `onStart()` 方法在 `onCreate()` 方法之后被调用或者在 Activity 从 Stop 状态转换为 Active 状态时被调用, 一般执行了 `onStart()` 后就执行 `onResume()` 
 > 
 >`onResume()` 在 Activity 从 Pause 状态转换到 Active 状态时被调用. 使 Activity 获得用户焦点, 可以再与用户交互.
+
+* 两个Activity之间跳转时必然会执行的是哪几个方法？
+
+// ToDo 
+
+一般情况比如说有两个Activity,分别叫A, B , 当在A里面激活B组件的时候, A 会调用 onPause()方法, 然后B调用onCreate(), onStart(), OnResume().
+
+这个时候B覆盖了窗体, A会调用onStop()方法. 但是如果B是透明的或者是对话框的样式, 就不会调用onStop()方法；
+
+http://stackoverflow.com/questions/16704105/android-while-switching-between-two-activities-the-calling-order-of-lifecycle
 
 
 来源:
