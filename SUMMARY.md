@@ -8,4 +8,5 @@
 * [View的绘制流程](viewde_hui_zhi_liu_cheng.md)
 * Android中的几种动画
 * [Message, Handler, MessageQueue, Looper之间的关系](handlerji_zhi.md)
+* AIDL
 
