@@ -1,4 +1,4 @@
-**如何保存 Activity 的状态**
+# **如何保存 Activity 的状态**
 
 **覆写 onSaveInstanceState\(\) 方法**
 
