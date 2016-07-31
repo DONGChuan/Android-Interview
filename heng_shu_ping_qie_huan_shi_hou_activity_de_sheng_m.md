@@ -2,11 +2,11 @@
 
 #### 总结:
 
-1. 不设置 \`Activity\` 的 \`android:configChanges\` 时, 切屏会重新调用各个生命周期, 切横屏时会执行一次, 切竖屏时会执行两次.
+1. 不设置 `Activity` 的 `android:configChanges` 时, 切屏会重新调用各个生命周期, 切横屏时会执行一次, 切竖屏时会执行两次.
 
-2. 设置 \`Activity\` 的 \`android:configChanges="orientation"\` 时, 切屏还是会重新调用各个生命周期, 切横\/竖屏时只会执行一次.
+2. 设置 `Activity` 的 `android:configChanges="orientation"` 时, 切屏还是会重新调用各个生命周期, 切横\/竖屏时只会执行一次.
 
-3. 设置 \`Activity\` 的 \`android:configChanges="orientation\|keyboardHidden"\` 时, 切屏不会重新调用各个生命周期, 只会执行\`onConfigurationChanged\`方法
+3. 设置 `Activity` 的 `android:configChanges="orientation|keyboardHidden"` 时, 切屏不会重新调用各个生命周期, 只会执行`onConfigurationChanged`方法
 
 
 > Activity 会自己管理配置的变化. 当运行的时候, 配置变了, 它会自己关闭并重新启动, 但是如果设置了 android:configChanges="某一个配置", 它就不会在这个配置发生改变时重新启动.
