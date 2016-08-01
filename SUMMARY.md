@@ -11,6 +11,8 @@
     * [如何退出 Activity](how-to-exist-activity.md)
     * [Context, Activity,Appliction 有什么区别](difference-between-context-activity-appliction.md)
     * [一个应用程序有几个Context](一个应用程序有几个context.md)
+    * [你知道onNewIntent吗](你知道onnewintent吗.md)
+    * [TaskAffinity 是什么](what-is-taskaffinity.md)
 * [View的绘制流程](viewde_hui_zhi_liu_cheng.md)
 * [Android中的几种动画](android中的几种动画.md)
 * [Message, Handler, MessageQueue, Looper之间的关系](handlerji_zhi.md)
