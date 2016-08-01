@@ -31,5 +31,6 @@
 * [AIDL](aidl.md)
 * [View](view.md)
     * 什么是View
-    * getWidth\(\)和getMeasuredWidth\(\)的区别
+    * [getWidth\(\)和getMeasuredWidth\(\)的区别](getwidth和getmeasuredwidth的区别.md)
+    * [自定义 View](自定义-view.md)
 
