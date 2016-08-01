@@ -20,9 +20,13 @@
 * [ContentProvider](contentprovider.md)
     * [如何实现数据共享](how-to-share-data-by-content-provider.md)
     * [为什么要用 ContentProvider](why-contentprovider.md)
-    * [ContentProvider and ContentResolver and ContentObserver](contentprovider-and-contentresolver-and-contentobserver.md)
+    * [ContentProvider, ContentResolver, ContentObserver 之间的关系](contentprovider-and-contentresolver-and-contentobserver.md)
 * [View的绘制流程](viewde_hui_zhi_liu_cheng.md)
 * [Android中的几种动画](android中的几种动画.md)
 * [Message, Handler, MessageQueue, Looper之间的关系](handlerji_zhi.md)
 * [AIDL](aidl.md)
+* [Serializable 和 Parcelable 的区别](difference-between-serializable-and-parcelable.md)
+* [Listview](listview.md)
+    * ListView 数据集改变后如何更新 ListView
+    * ListView 如何实现分页加载
 
