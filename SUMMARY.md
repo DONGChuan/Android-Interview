@@ -15,4 +15,6 @@
 * [AIDL](aidl.md)
 * [Service](service.md)
     * [Service 是否在主线程中执行](is-service-in-main-thread.md)
+    * [Activity 怎么和 Service 绑定](service-bind-with-activity.md)
+    * [如何启动服务](如何启动服务.md)
 
