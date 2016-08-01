@@ -14,4 +14,5 @@
 * [Message, Handler, MessageQueue, Looper之间的关系](handlerji_zhi.md)
 * [AIDL](aidl.md)
 * [Service](service.md)
+    * [Service 是否在主线程中执行](is-service-in-main-thread.md)
 
