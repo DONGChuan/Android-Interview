@@ -1,22 +1,18 @@
 # **Context, Activity, Appliction 有什么区别?**
 
-### 相同: 
+### 相同:
 
 Activity 和 Application 都是 Context 的子类
 
 Context 从字面上理解就是上下文的意思, 在实际应用中它也确实是起到了管理上下文环境中各个参数和变量的作用, 方便我们可以简单的访问到各种资源.
 
-### 
+### 不同:
 
-不同:
+维护的生命周期不同.
 
-维护的生命周期不同. 
+* Activity 维护的是当前的 Activity 的生命周期.** 所以其对应的Context也只能访问该 Activity 内的各种资源**
 
-* Context 维护的是当前的 Activity 的生命周期
-
-* Application 维护的是整个项目的生命周期. 
-
-
+* Application 维护的是整个项目的生命周期.
 
 
 使用 context 的时候, 小心内存泄露, 防止内存泄露, 注意一下几个方面:
