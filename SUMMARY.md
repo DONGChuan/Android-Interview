@@ -35,9 +35,5 @@
 * [View的绘制流程](viewde_hui_zhi_liu_cheng.md)
 * [Android中的几种动画](android中的几种动画.md)
 * [Message, Handler, MessageQueue, Looper之间的关系](handlerji_zhi.md)
-* [View](view.md)
-    * 什么是View
-    * [getWidth\(\)和getMeasuredWidth\(\)的区别](getwidth和getmeasuredwidth的区别.md)
-    * [自定义 View](自定义-view.md)
 * [Android的数据存储形式](androidde_shu_ju_cun_chu_xing_shi.md)
 
