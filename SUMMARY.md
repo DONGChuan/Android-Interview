@@ -1,7 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* [Android的数据存储形式](androidde_shu_ju_cun_chu_xing_shi.md)
 * [Activity](activity.md)
     * [生命周期](sheng_ming_zhou_qi.md)
     * [Activity的四种启动模式](activityde_si_zhong_qi_dong_mo_shi.md)
@@ -29,12 +28,16 @@
     * [ListView 数据集改变后如何更新 ListView](listview-数据集改变后如何更新-listview.md)
     * [ListView 如何实现分页加载](listview-如何实现分页加载.md)
     * [Adapter的种类](adapter的种类.md)
-* [View的绘制流程](viewde_hui_zhi_liu_cheng.md)
-* [Android中的几种动画](android中的几种动画.md)
-* [Message, Handler, MessageQueue, Looper之间的关系](handlerji_zhi.md)
-* [AIDL](aidl.md)
 * [View](view.md)
     * 什么是View
     * [getWidth\(\)和getMeasuredWidth\(\)的区别](getwidth和getmeasuredwidth的区别.md)
     * [自定义 View](自定义-view.md)
+* [View的绘制流程](viewde_hui_zhi_liu_cheng.md)
+* [Android中的几种动画](android中的几种动画.md)
+* [Message, Handler, MessageQueue, Looper之间的关系](handlerji_zhi.md)
+* [View](view.md)
+    * 什么是View
+    * [getWidth\(\)和getMeasuredWidth\(\)的区别](getwidth和getmeasuredwidth的区别.md)
+    * [自定义 View](自定义-view.md)
+* [Android的数据存储形式](androidde_shu_ju_cun_chu_xing_shi.md)
 
