@@ -18,6 +18,7 @@
     * [描述 Service 的生命周期](描述-service-的生命周期.md)
     * [Activity 怎么和 Service 绑定](service-bind-with-activity.md)
     * [如何启动服务](如何启动服务.md)
+    * [什么是 IntentService](什么是intentservice.md)
 * [ContentProvider](contentprovider.md)
     * [如何实现数据共享](how-to-share-data-by-content-provider.md)
     * [为什么要用 ContentProvider](why-contentprovider.md)
