@@ -7,6 +7,7 @@ Service 有
 
 不同的模式生命周期不同
 
+![Service 生命周期](service-生命周期.png)
 
 
 
