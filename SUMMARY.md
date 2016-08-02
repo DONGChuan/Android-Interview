@@ -15,6 +15,7 @@
     * [TaskAffinity 是什么](what-is-taskaffinity.md)
 * [Service](service.md)
     * [Service 是否在主线程中执行](is-service-in-main-thread.md)
+    * [描述 Service 的生命周期](描述-service-的生命周期.md)
     * [Activity 怎么和 Service 绑定](service-bind-with-activity.md)
     * [如何启动服务](如何启动服务.md)
 * [ContentProvider](contentprovider.md)
