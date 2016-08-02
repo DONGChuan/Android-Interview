@@ -44,5 +44,6 @@
   onConfigurationChanged--&gt;onConfigurationChanged--&gt;
 
 
-> 只竖屏显示 android:screenOrientation="portrait". 只横屏显示 android:screenOrientation="landscape"
+> 只竖屏显示 android:screenOrientation="portrait"   
+> 只横屏显示 android:screenOrientation="landscape"
 

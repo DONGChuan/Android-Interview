@@ -4,15 +4,15 @@
 ## standard
 
 
-默认启动模式. 每个发送的 Intent 都会创建一个新的 Activity, 并且将其放入任务栈栈顶, 而不管这个 Activity 是否已经存在. Activity 的启动三回调(onCreate()->onStart()->onResume())都会执行. 也就是说每次都创建一个新的实例.
+默认启动模式. 每个发送的 Intent 都会创建一个新的 Activity, 并且将其放入任务栈栈顶, 而不管这个 Activity 是否已经存在. Activity 的启动三回调(`onCreate()->onStart()->onResume()`)都会执行. 也就是说每次都创建一个新的实例.
 
 
 ## singleTop
 
 
-如果新 Activity 已经位于任务栈的栈顶, 那么此 Activity 不会被重新创建, 所以它的启动三回调就不会执行, 同时 Activity 的 onNewIntent() 方法会被回调. 如果 Activity 已经存在却不在栈顶, 那么作用和标准模式一样, 一个新的 Activity 会被创建并放到栈顶.
+如果新 Activity 已经位于任务栈的栈顶, 那么此 Activity 不会被重新创建, 所以它的启动三回调就不会执行, 同时 Activity 的 `onNewIntent()` 方法会被回调. 如果 Activity 已经存在却不在栈顶, 那么作用和标准模式一样, 一个新的 Activity 会被创建并放到栈顶.
 
-在这个模式下, 我们必须同时在 onCreate()  和 onNewIntent() 两个方法中处理好传入的 Intent.
+在这个模式下, 我们必须同时在 `onCreate()` 和 `onNewIntent()` 两个方法中处理好传入的 Intent.
 
 
 ### 应用场景
@@ -27,7 +27,7 @@
 ## singleTask
 
 
-如果栈中任意位置已经有一个 Activity 实例, 那么这个 Activity 就会被调到栈顶, 始终保持一个实例, 同时回调 onNewIntent() , 并且 singleTask 会清理在当前 Activity 上面的所有 Activity.
+如果栈中任意位置已经有一个 Activity 实例, 那么这个 Activity 就会被调到栈顶, 始终保持一个实例, 同时回调 `onNewIntent()` , 并且 singleTask 会清理在当前 Activity 上面的所有 Activity.
 
 
 ## singleInstance
